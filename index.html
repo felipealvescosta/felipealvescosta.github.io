@@ -1,24 +1,315 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
+<html lang="pt-br">
 
-    <title>Felipe Alves</title>
+<head>
 
-    <
-  </head>
+	<meta charset="UTF-8">
+	<title>Felipe Alves - Developer and Entrepreneur</title>
+	<meta name="author" content="Felipe Alves">
+	<meta name="description" content="Developer and Entrepeneur">
+	<meta name="keywords" content="Developer, Dev, Web, Desenvolvedor, Software, 'Felipe Alves', Sistemas, Analista, Blog">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <body>
-  <p>Em breve algo por aqui, enquanto isso, acesse <a href="http://felipealvescosta.com" target="_blank">meu site</a>
-  e veja meus repositorios no <br> <a href="https://github.com/felipealvescosta/" target="_blank">github</a>!
-  Abraços e até breve... :D</p>
-   
-   </body>
+	<link rel="stylesheet" type="text/css" href="_assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="_assets/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<style type="text/css">
+		html, body {
+			height:100%;
+		}
+
+		#main {
+			min-width: 100%;
+			min-height: 100%;
+			background-image: url(_assets/image/bridge_color_full.gif);
+		}
+
+	</style>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-36465787-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('div.bgParallax').each(function(){
+				var $obj = $(this);
+
+				$(window).scroll(function() {
+					var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+
+					var bgpos = '50% '+ yPos + 'px';
+
+					$obj.css('background-position', bgpos );
+				}); 
+			});	
+		});
+	</script>
+
+	<script type="text/javascript">
+        jQuery(document).ready(function($) { 
+          $(".scroll").click(function(event){        
+              event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 'slow');
+        });
+      });
+	</script>
+
+	<script type="text/javascript">
+		$(window).scroll(function() {
+
+		    if ($(this).scrollTop()>150)
+		     {
+		        $('.menu').fadeIn();
+		     }
+		    else
+		     {
+		      $('.menu').fadeOut();
+		     }
+		});
+	</script>
+
+</head>
+
+<body >
+	<header class="header">
+		<nav class=" navbar-inverse menu ">
+			<div class="container">
+			          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button> 
+		        </div>
+		        <div id="navbar" class=" collapse navbar-collapse">
+
+			        <ul class="nav navbar-nav navbar-right">
+			            <li><a href="#main" class="scroll"> Home </a></li>
+			            <li><a href="#about" class="scroll"> About Me </a></li>
+			            <li><a href="#skills" class="scroll"> Skills </a></li>
+			            <li><a href="#projects" class="scroll"> Projects </a></li>
+			            <li><a href="#curriculum" class="scroll">Curriculum </a></li>
+			            <li><a href="#social" class="scroll">Social </a></li>
+			            <li><a href="#blog"  class="scroll">Blog </a></li>
+			        </ul>
+		        </div>
+		      </div>
+	     </nav>
+	</header>
+	<div id="main" class="bgParallax scroll" data-speed="30">
+			     <section>
+			     	<h1 id="texto">		< Felipe Alves />
+			     				   <br/>
+			     		   <h3>Developer & Entrepreneur</h3>
+			     	</h1>
+			     </section>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+
+				<div id="about" data-speed="10" >
+					<div class="eraser"></div>
+					    <section>
+					     	<center>
+					     		<h1>About Me</h1>
+					     		<br>
+					     		<p>"Olá!"</p>
+					     		<br>
+					     		<p> Meu nome é Felipe, tenho 23 anos. Sou Analista de Sistemas, apaixonado por startup, empreendedorismo, plano de négocio, tecnologia e tudo que envolva circuitos. Sou empreendedor, professor, aprendedor e gosto de desafios.
+					     		<br><br>
+					     		</p>
+					     		<p class="frase"> 
+					     		<i>
+					     		"Não faz sentido olhar para trás e pensar: devia ter feito isso ou aquilo, devia ter estado lá. Isso não importa. Vamos inventar o amanhã, e parar de nos preocupar com o passado.
+					     		" <small>- Seteve Jobs</small></i>
+					     		</p>
+					     		<br><br><br>
+					     		<p>Saiba mais sobre mim e descubra minhas habilidades.</p>
+					     	</center>
+					    </section>
+					    <br><br><br>
+				</div>
+
+				<div id="skills">
+					<div class="eraser"></div>
+					    <section>
+					     	<center>
+					     		<h1 class="colors">Skills</h1>
+					     	</center>
+					    </section>
+					    <div class="row" >
+					    	<div class="col-md-6 skills">
+					    		<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Gosto de resultados</li>
+					     		</ul>
+					   			
+					     		<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Confiante</li>
+					     		</ul>
+
+					     		<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Bom trabalho em equipe</li>
+					     		</ul>
+
+					     		<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Mente aberta</li>
+					     		</ul>
+				     		</div>
+				     	
+				     		<div class="col-md-6 skills">
+					   			<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Proativo</li>
+					     		</ul>
+					     		
+					     		<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Gosto de diálogos</li>
+					     		</ul>
+					     		<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Paciente</li>
+					     		</ul>
+
+					     		<ul>
+					   			 	<li><span class="glyphicon glyphicon-ok"/> Aberto à mudanças</li>
+					     		</ul>
+				     		</div>
+				     	</div>
+				</div>
+
+				<div id="projects">
+					<div class="eraser"></div>
+					    <section>
+					     	<center>
+					     		<h1>Projects</h1>
+					       	</center>
+					    </section>
+				 <div class="container">
+					<div class="row esp">
+
+	                    <div class="col-md-4 img">
+	                      <a href="http://felipealvescosta.com/agronegocio" target="_blank" class="thumbnail">
+	                        <img src="_assets/image/corepart.png" alt="Corepart"/></a>
+	                    </div>
+
+	                    <div class=" col-md-4 img ">
+	                      <a href="http://felipealvescosta.com/e-solar" target="_blank"class="thumbnail">
+	                        <img src="_assets/image/esolar.png" alt="E-solar"/> </a>
+	                    </div>
+
+	                    <div class="col-md-4 img">
+	                      <a href="http://felipealvescosta.com/geragua" target="_blank" class="thumbnail">
+	                        <img src="_assets/image/geragua.png" alt="Geragua"/></a>
+	                    </div>
+
+	                    <div class="col-md-4 img">
+	                      <a href="http://felipealvescosta.com/pizza" target="_blank" class="thumbnail">
+	                        <img src="_assets/image/pizza.png" alt="Pizzaria" /></a>
+	                    </div>
+
+	                    <div class="col-md-4 img">
+	                      <a href="http://felipealvescosta.com/erp" target="_blank" class="thumbnail">
+	                        <img src="_assets/image/erp.png" alt="ERP O Caeira"/></a>
+	                    </div>
+
+	                 </div>
+	                </div>
+				</div>
+
+
+				<div id="curriculum">
+					<div class="eraser"></div>
+					     	<center>
+					     		<h1>Curriculum</h1>
+					       	</center>
+					<div class="row">
+						<div class="col-md-offset-3 col-md-6 curriculo">
+							<a href="http://lattes.cnpq.br/6256409367497253" target="_blank"><h2><span class="glyphicon glyphicon-share"></span> Ver Currículo</h2></a>
+							<small><i>Currículo padrão Lattes.</i></small>
+						</div>
+
+					</div>
+				<br><br><br><br><br>
+				</div>
+
+				<div id="social">
+					<div class="eraser"></div>
+				     	<center>
+				     		<h1>Social</h1>
+				       	</center>
+				  <div class="container">
+					<div class="row">
+                    <div class=" col-md-3">
+                      <a href="https://www.facebook.com/FelipeAlvesDaCosta" target="_blank" class="thumbnail">
+                        <img src="_assets/image/facebook.png" alt="Facebook">
+                      </a>
+                    </div>
+
+                    <div class=" col-md-3">
+                      <a href="https://plus.google.com/u/0/+FelipeAlvesCosta" target="_blank"class="thumbnail">
+                        <img src="_assets/image/gplus.png" alt="Google Plus">
+                      </a>
+                    </div>
+
+                    <div class=" col-md-3">
+                      <a href="https://br.linkedin.com/in/felipealvesdacosta" target="_blank" class="thumbnail">
+                        <img src="_assets/image/linkedin.png" alt="Linkedin" >
+                      </a>
+                    </div>
+
+                    <div class="col-md-3">
+                      <a href="https://twitter.com/felllipealves" target="_blank" class="thumbnail">
+                        <img src="_assets/image//twitter.png" alt="Twitter" >
+                      </a>
+                    </div>
+
+                     <div class=" col-md-3">
+                      <a href="https://instagram.com/felipecostaa/" target="_blank" class="thumbnail">
+                        <img src="_assets/image/instagram.png" alt="Instagram">
+                      </a>
+                    </div>
+
+                    <div class=" col-md-3">
+                      <a href="http://youtube.com/c/FelipeAlvesCosta" target="_blank" class="thumbnail">
+                        <img src="_assets/image/youtube.png" alt="YoutTube" >
+                      </a>
+                    </div>
+
+                    <div class=" col-md-3">
+                      <a href="https://github.com/felipealvescosta/" target="_blank" class="thumbnail">
+                        <img src="_assets/image/github.png" alt="GitHub" >
+                      </a>
+                    </div>
+                     
+                  </div>
+
+				</div>
+			</div>
+			</div>
+	</div>
+	<div class="eraser"></div>
+	<div class="footer">
+      <footer>
+        <center><br>Felipe Alves da Costa | 2016</center>
+      </footer>
+    </div>
+	
+	
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="_assets/js/bootstrap.min.js"></script>
+
 </html>
