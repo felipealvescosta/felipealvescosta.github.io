@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Amaranth:400,400italic);
+
+
+.perfil{
+    margin-left: 70px;
+    background-color: #FBFD96;
+    height: 300px;
+    width: 600px;
+    font-family: 'Amaranth', sans-serif; 
+    font-size: 40px;
+    border-radius: 0px 60px 3px 0px;
+    padding: 40px;
+}
+
+@-webkit-keyframes rotate{
+	from{ -webkit-transform:rotate(0deg); }
+	to{ -webkit-transform:rotate(360deg); }
+}
+
+.roda{
+	-webkit-animation-name:rotate;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+.inputs{
+	height: 50px;
+	width: 100%;
+	background-color: #D00FFF;
+	font-size: 27px;
+	color: white;
+	-webkit-box-shadow: inset -4px 3px 80px -1px rgba(0,0,0,0.75);
+	
+}
+
+.inputs2 {
+    height: 100px;
+    width: 100%;
+    background-color: #D00FFF;
+    font-size: 25px;
+    color: white;
+    -webkit-box-shadow: inset -4px 3px 80px -1px rgba(0,0,0,0.75);
+    
+}
+
+
+label{
+	font-size: 20px;
+}
+.inpu{
+	height: 30px;
+	width:30%;
+	font-size: 18px;
+}
+
+.outro{
+	background-color: #FDF502;
+}
+
+.exemplo1{
+    text-shadow: 10px 10px blue;
+}
+
+.exemplo3{
+	border: 5px solid white;
+}
+
+.exemplo4{
+	 width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0; 
+}
+
+.exemplo5{
+	font-size: 80px;
+	 width: 300px;
+    height: 80px;
+    overflow: scroll;
+}
+
+.exemplo6{
+	-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(300deg);
+}
+
+
+
+.fundo{
+	 background: -webkit-linear-gradient(green, yellow); /* For Safari 5.1 to 6.0 */
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.tables{
+   border: 1px solid black;
+}
+
+/* Chrome, Safari, Opera */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+.movimentos div{
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    font-size: 20px;
+}
+
+
+/*Sol*/
+.sol{  
+    position: relative;
+    -webkit-animation: sol 20s infinite;
+}
+@-webkit-keyframes sol {
+    from {left: 0px;}
+    to {left: 600px;}
+}
+
+/* carro */
+
+.carro{  
+    margin-bottom: -70px;
+    position: relative;
+    -webkit-animation: carro 1s infinite; 
+}
+@-webkit-keyframes carro {
+    from {left: -80px;}
+    to {left: 600px;}
+}
+
+
+
+.pista{
+    background-color: #4B4B4B;
+    height: 100px;
+    margin-bottom: 200px;
+    width:900px;
+    margin-left: -60px;
+}
+
+.bac{
+    background-color: #FDFF74;
+}
+
+.lin{
+    color: white;
+}
+
+.botao{
+    margin-top: 100px;
+    height: 300px;
+    width: 700px;
+    background-color: rgba(red, yellow);
+    font-size: 70px;
+    border-radius: 10 10 10 10;
+}
